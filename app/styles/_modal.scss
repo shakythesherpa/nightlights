@@ -6,11 +6,13 @@
   width: 100%;
   height: 100%;
   @extend %base-box-skin;
+  background-color: rgba($base-color, .9);
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 
   &.active {
-    opacity: .9;
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
   }
 
   &.destroyed {
